@@ -1,0 +1,32 @@
+{
+    "name": "ironnman/saas",
+    "alias": "",
+    "description": "dcat-admin saas 扩展",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/ironnman/saas",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ironnman",
+            "email": "wenlin42@icloud.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IronnMan\\Saas\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "IronnMan\\Saas\\SaasServiceProvider",
+        "laravel": {
+            "providers": [
+                "IronnMan\\Saas\\SaasServiceProvider"
+            ]
+        }
+    }
+}
